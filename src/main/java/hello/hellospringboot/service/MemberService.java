@@ -9,7 +9,12 @@ import java.util.Optional;
 
 public class MemberService {
 
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+    private final MemberRepository memberRepository;
+
+    // Dependency Injection
+    public MemberService(MemoryMemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
 
     // 회원 가임
     public Long join(Member member) {
