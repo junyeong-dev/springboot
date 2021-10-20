@@ -25,4 +25,12 @@ public class HelloSpringbootApplication {
 		SpringApplication.run(HelloSpringbootApplication.class, args);
 	}
 
+	// H2 데이터베이스 사용
+	// H2 설치 -> H2 Console
+	// 인터넷 창이 뜨게 되는데 로딩이 제대로 안될때는 주소창 앞의 ip번호를 지우고 localhost로 변경
+	// jdbc:h2:~/test - 초기
+	// jdbc:h2:tcp://localhost/~/test - 변경
+	// 기본적으로 접속하게 되면 User Home에 test.mv.db가 생성됨
+
+
 }
